@@ -1,6 +1,4 @@
 // usage: loop(<function>, <delay>, [amount], [callback]);
-module.exports = loop;
-
 var loop = function(f, d, a, c) {
   if(!f) throw "Invalid Syntax: Missing Function.";
   if(!d) throw "Invalid Syntax: Missing Delay.";
@@ -16,3 +14,5 @@ var loop = function(f, d, a, c) {
     setInterval(f, d);
   }
 };
+
+module.exports = loop;
