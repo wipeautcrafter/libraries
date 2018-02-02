@@ -11,6 +11,25 @@ usage:
 loop(<function>, <delay>, [amount], [callback]);
 ```
 
+# httpget.js
+httpget.js is an easy way to make http get requests in nodejs
+it is small, fast, compact and easy-to-use, compared to the normal http get
+
+usage:
+```js
+var get = require('./httpget.js');
+
+// http get without arguments
+get("https://icanhazdadjoke.com", "/", function(res) => {
+   // do things with the result
+});
+
+// http get with arguments
+get("https://your-site.com", "getname.php?name=john&lastname=doe", function(res) => {
+   // do things with the result
+});
+```
+
 # discordbot.js
 discordbot.js is a library that makes running discord bots really easy.
 
