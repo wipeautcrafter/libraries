@@ -19,13 +19,13 @@ usage:
 ```js
 var get = require('./httpget.js');
 
-// http get without arguments
-get("https://icanhazdadjoke.com", "/", function(res) {
+// http get
+get("http://your-site.com?name=john&lastname=doe", function(res) {
    // do things with the result
 });
 
-// http get with arguments
-get("https://your-site.com", "getname.php?name=john&lastname=doe", function(res) {
+// https get
+get("https://your-site.com?name=john&lastname=doe", function(res) {
    // do things with the result
 });
 ```
