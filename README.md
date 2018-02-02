@@ -20,12 +20,12 @@ usage:
 var get = require('./httpget.js');
 
 // http get without arguments
-get("https://icanhazdadjoke.com", "/", function(res) => {
+get("https://icanhazdadjoke.com", "/", function(res) {
    // do things with the result
 });
 
 // http get with arguments
-get("https://your-site.com", "getname.php?name=john&lastname=doe", function(res) => {
+get("https://your-site.com", "getname.php?name=john&lastname=doe", function(res) {
    // do things with the result
 });
 ```
